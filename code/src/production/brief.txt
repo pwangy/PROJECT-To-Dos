@@ -1,6 +1,7 @@
 summary: spacing
 fix clear done
 check breakpoints
+// also found in: text, icon
 
 
 music project
@@ -20,9 +21,35 @@ music project
   }
 }
 
+example of what media break looks like in a styled component
+export const RoundedContainer = styled.div`
+  background: ${(props) => props.background || '#f8f8ff'};
+  margin-bottom: 3px;
+
+  @media (min-width: 500px) {
+    padding: 0 45px;
+  }
+`
+
+
 if task is done, style text w/ strikethrough
 task added indicator - see cliper's ex.
 
+
+henrike: mark all as done, also has an empty state
+moa for the alert code
+
+empty state: message, disable view option buttons
+
+sofia's code coach used localstorage to implement persistence 
+https://github.com/bealun/project-todos/blob/master/code/src/App.js
+
+henrike's source for her empty state image
+https://www.vecteezy.com/
+
+
+npm sweetalert, npm sweetalert 2
+https://www.npmjs.com/package/uniqueid
 
 container padding
 label text size

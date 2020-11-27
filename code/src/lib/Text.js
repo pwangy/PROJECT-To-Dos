@@ -3,13 +3,14 @@ import styled from 'styled-components'
 export const Title = styled.h1`
   margin-top: 0;
   color: #5692ff;
-  font-size: 40px;
+  font-size: 36px;
   align-self: flex-start;
   line-height: 20px;
 
   ${'' /* @media (min-width: 500px) {
     font-size: 88px;
     margin-top: 15px;
+    font-size: 40px;
   }  */}
 `
 
@@ -31,5 +32,10 @@ export const H3 = styled.h3`
 `
 
 export const Priority = styled.text`
-  font-size: 10px
+  font-size: 10px;
+`
+
+export const Label = styled.label`
+  margin-left: 8px;
+  font-size: 11px;
 `

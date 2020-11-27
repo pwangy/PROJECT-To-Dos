@@ -3,9 +3,10 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 
 import { remember } from 'reducers/remember'
-import { RoundedContainer } from 'lib/Container'
+import { FormContainer } from 'lib/Container'
 import { Button } from 'lib/Button'
 import { Select } from 'lib/Select'
+import { Label } from 'lib/Text'
 
 export const AddTask = () => {
   const [text, setText] = useState('')
@@ -20,7 +21,7 @@ export const AddTask = () => {
   }
 
   return (
-    <RoundedContainer background="#cce5ff">
+    <FormContainer background="#cce5ff">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -29,7 +30,7 @@ export const AddTask = () => {
           placeholder="add an item"
           required />
 
-        <label>
+        <Label>
           Set Priority:
           <Select
             value={priority}
@@ -39,9 +40,9 @@ export const AddTask = () => {
             <option value="Medium">Medium</option>
             <option value="Low">Low</option>
           </Select>
-        </label>
+        </Label>
         <Button type="submit">Add Item</Button>
       </form>
-    </RoundedContainer>
+    </FormContainer>
   )
 }

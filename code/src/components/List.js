@@ -7,7 +7,8 @@ import { Task } from 'components/Task'
 import { ClearDone } from 'components/ClearDoneButton'
 import { ClearButton } from 'components/ClearButton'
 import { Select } from 'lib/Select'
-import { RoundedContainer } from 'lib/Container'
+import { ViewOptionsContainer, ListContainer } from 'lib/Container'
+import { Label } from 'lib/Text'
 
 export const List = () => {
   const [priority, setPriority] = useState('')
@@ -18,8 +19,8 @@ export const List = () => {
 
   return (
     <>
-      <RoundedContainer background="#cce5ff">
-        <label>
+      <ViewOptionsContainer background="#cce5ff">
+        <Label>
           Filter by:
           <Select
             value={priority}
@@ -29,17 +30,15 @@ export const List = () => {
             <option value="Low">Low</option>
             <option value="">Show All</option>
           </Select>
-        </label>
+        </Label>
         <ClearDone />
         <ClearButton />
-      </RoundedContainer>
-      <span>
+      </ViewOptionsContainer>
+      <ListContainer background="pink">
         {items.map((item) => (
           <Task key={item.id} item={item} />
         ))}
-      </span>
+      </ListContainer>
     </>
   )
 }
-
-// background="pink"
