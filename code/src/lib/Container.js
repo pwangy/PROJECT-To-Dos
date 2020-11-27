@@ -34,8 +34,8 @@ export const TaskContainer = styled.div`
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: 16px 16px auto 16px 16px;
-  grid-template-rows: 25% 100px auto 8%;
+  grid-template-columns: [start] 8px [2] 30px [3] 40px [4] auto [5] 40px [6] 30px [7] 8px [end];
+  grid-template-rows: [first] 25% [r1] 55px [r2] 55px [r3] auto [r4] 8% [last];
   ${'' /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */}
   grid-gap: 1rem;
   ${'' /* backgrsound: ${(props) => props.background || 'lavender'}; */}
