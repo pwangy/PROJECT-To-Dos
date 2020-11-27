@@ -10,9 +10,9 @@ export const Icon = styled.img.attrs({
   width: 80px;
   margin: 10px 10px 0 0;
 
-  @media (min-width: 500) {
+  ${'' /* @media (min-width: 500) {
     height: 150px;
     width: 150px;
     margin: 15px 15px 0 0;
-  }
+  } */}
 `

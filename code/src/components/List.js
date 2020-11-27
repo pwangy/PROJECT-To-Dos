@@ -18,7 +18,7 @@ export const List = () => {
 
   return (
     <>
-      <RoundedContainer background="pink">
+      <RoundedContainer background="#cce5ff">
         <label>
           Filter by:
           <Select
@@ -41,3 +41,5 @@ export const List = () => {
     </>
   )
 }
+
+// background="pink"

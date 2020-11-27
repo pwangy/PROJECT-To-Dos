@@ -17,9 +17,9 @@ export const RoundedContainer = styled.div`
   justify-content: flex-end;
   align-items: flex-end;
 
-  @media (min-width: 500px) {
+  ${'' /* @media (min-width: 500px) {
     ${'' /* padding: 0 45px; */}
-  }
+  } */}
 `
 
 export const TaskContainer = styled.div`
@@ -32,19 +32,21 @@ export const TaskContainer = styled.div`
   align-items: center;
 `
 
-export const AppShell = styled.section`
-  width: 95%;
-  background: ${(props) => props.background || 'lavender'};
-  margin-bottom: 3px;
-  padding: 0 16px;
-  border-radius: 4px;
-  flex-wrap: nowrap;
+export const AppShell = styled.div`
+  ${'' /* width: 95%; */}
+  ${'' /* backgrsound: ${(props) => props.background || 'lavender'}; */}
+  ${'' /* margin-bottom: 3px;
+  padding: 0 16px; */}
+  ${'' /* border-radius: 4px; */}
+  ${'' /* flex-wrap: nowrap;
   justify-content: flex-end;
-  align-items: flex-end;
-
-  @media (min-width: 500px) {
+  align-items: flex-end; */}
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  ${'' /* @media (min-width: 500px) {
     ${'' /* padding: 0 45px; */}
-  }
+  } */}
 `
 
 // check breakpoints

@@ -7,10 +7,10 @@ export const Title = styled.h1`
   align-self: flex-start;
   line-height: 20px;
 
-  @media (min-width: 500px) {
+  ${'' /* @media (min-width: 500px) {
     font-size: 88px;
     margin-top: 15px;
-  } 
+  }  */}
 `
 
 export const Subtitle = styled.h2`
@@ -19,9 +19,9 @@ export const Subtitle = styled.h2`
   font-size: 20px;
   text-align: right;
 
-  @media (min-width: 500px) {
+  ${'' /* @media (min-width: 500px) {
     font-size: 40px;
-  }
+  } */}
 `
 export const H3 = styled.h3`
   margin: 0;

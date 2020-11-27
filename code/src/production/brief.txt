@@ -20,8 +20,8 @@ music project
   }
 }
 
-
-
+if task is done, style text w/ strikethrough
+task added indicator - see cliper's ex.
 
 
 container padding
